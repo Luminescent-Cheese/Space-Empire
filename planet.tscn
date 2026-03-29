@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ci6vrk15276qf"]
+
+[ext_resource type="Texture2D" uid="uid://h2ihyggrwfrq" path="res://icon.svg" id="1_1odxm"]
+[ext_resource type="Script" uid="uid://bsyrm4bt0ip5t" path="res://planet.gd" id="1_mtr83"]
+
+[node name="planet" type="Node2D" unique_id=201464674]
+script = ExtResource("1_mtr83")
+
+[node name="Button" type="Button" parent="." unique_id=2122741636]
+offset_left = -50.0
+offset_top = -112.0
+offset_right = 53.0
+offset_bottom = -73.0
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=776538059]
+texture = ExtResource("1_1odxm")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

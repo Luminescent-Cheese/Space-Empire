@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b066a81quxqcj"]
+
+[ext_resource type="Script" uid="uid://q0ni2jtwkb2y" path="res://ship.gd" id="1_4cq66"]
+[ext_resource type="Texture2D" uid="uid://dgs0vmnikarov" path="res://ships (2).png" id="1_l3rv8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_l3rv8"]
+radius = 35.014282
+
+[node name="ship" type="CharacterBody2D" unique_id=576838477]
+script = ExtResource("1_4cq66")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=708855811]
+shape = SubResource("CircleShape2D_l3rv8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=959338999]
+texture_filter = 1
+position = Vector2(0, -10)
+texture = ExtResource("1_l3rv8")

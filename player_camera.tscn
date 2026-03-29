@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bdpca0ldi6orr"]
+
+[ext_resource type="Script" uid="uid://qlxpssxaj15e" path="res://player.gd" id="1_agiyq"]
+
+[node name="playerCamera" type="Node2D" unique_id=903881896]
+script = ExtResource("1_agiyq")
+
+[node name="playerCamera" type="Camera2D" parent="." unique_id=1455621354]

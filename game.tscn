@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bfnup0e0nvpd3"]
+
+[ext_resource type="PackedScene" uid="uid://bdpca0ldi6orr" path="res://player_camera.tscn" id="1_e2o6t"]
+[ext_resource type="Script" uid="uid://0bpjugrpuulj" path="res://game.gd" id="1_fc0e3"]
+[ext_resource type="PackedScene" uid="uid://ci6vrk15276qf" path="res://planet.tscn" id="2_e2o6t"]
+[ext_resource type="Script" uid="uid://b6ubyory3fdhq" path="res://planets.gd" id="2_fc0e3"]
+
+[node name="game" type="Node2D" unique_id=1009625340]
+script = ExtResource("1_fc0e3")
+
+[node name="playerCamera" parent="." unique_id=903881896 instance=ExtResource("1_e2o6t")]
+
+[node name="planets" type="Node2D" parent="." unique_id=1240584036]
+position = Vector2(883, 151)
+script = ExtResource("2_fc0e3")
+
+[node name="planet" parent="planets" unique_id=201464674 instance=ExtResource("2_e2o6t")]
+position = Vector2(-1280, -191)
+
+[node name="planet2" parent="planets" unique_id=806838023 instance=ExtResource("2_e2o6t")]
+
+[node name="planet3" parent="planets" unique_id=1360781158 instance=ExtResource("2_e2o6t")]
+position = Vector2(-596, -902)
