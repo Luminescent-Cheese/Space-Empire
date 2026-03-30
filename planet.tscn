@@ -6,13 +6,20 @@
 [node name="planet" type="Node2D" unique_id=201464674]
 script = ExtResource("1_mtr83")
 
-[node name="Button" type="Button" parent="." unique_id=2122741636]
-offset_left = -50.0
+[node name="Button" type="Button" parent="." unique_id=1502094174]
+offset_left = -69.0
 offset_top = -112.0
-offset_right = 53.0
-offset_bottom = -73.0
+offset_right = -36.0
+offset_bottom = -79.0
+
+[node name="summon ship" type="Button" parent="." unique_id=2122741636]
+offset_left = -29.0
+offset_top = -114.0
+offset_right = 74.0
+offset_bottom = -75.0
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=776538059]
 texture = ExtResource("1_1odxm")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="summon ship" to="." method="_on_summon_ship_pressed"]

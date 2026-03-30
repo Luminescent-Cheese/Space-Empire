@@ -12,6 +12,7 @@ func _ready() -> void:
 	orbitDistance = rng.randi_range(250,350)
 	
 func _physics_process(delta: float) -> void:
+	#print(home)
 	_orbit(orbitDistance,orbitdegree)
 	orbitdegree -= orbitSpeed
 	rotation = orbitdegree
